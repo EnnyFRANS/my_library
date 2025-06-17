@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="ir_cron_data_message_late" model="ir.cron">
+            <field name="name">My Library: Check if this is late</field>
+            <field name="model_id" ref="model_library_loan"/>
+            <field name="code">model.cron_late_show_message_chatter()</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+        </record>
+    </data>
+</odoo>

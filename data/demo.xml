@@ -1,0 +1,41 @@
+<odoo>
+    <data>
+        <record id="book1" model="library.book">
+            <field name="name">Wild Dark Shore</field>
+            <field name="author">Charlotte McConaghy</field>
+            <field name="quantity">10</field>
+            <field name="active">True</field>
+        </record>
+        <record id="book2" model="library.book">
+            <field name="name">King of Ashes</field>
+            <field name="author">S. A. Cosby</field>
+            <field name="quantity">10</field>
+            <field name="active">True</field>
+        </record>
+        <record id="book3" model="library.book">
+            <field name="name">No More Tears</field>
+            <field name="author">Gardiner Harris</field>
+            <field name="quantity">10</field>
+            <field name="active">True</field>
+        </record>
+        <record id="category1" model="book.category">
+            <field name="name">Fiction</field>
+            <field name="description">
+                Includes sub-genres like mystery, fantasy, science fiction, and romance.
+            </field>
+        </record>
+         <record id="category2" model="book.category">
+            <field name="name">Non-Fiction</field>
+            <field name="description">
+                Encompasses genres such as biography, autobiography, memoir, self-help, and history.
+            </field>
+        </record>
+        <record id="category3" model="book.category">
+            <field name="name">Historical Fiction</field>
+            <field name="description">
+                Set in a specific historical period, blending factual events with fictional characters.
+            </field>
+        </record>
+    </data>
+
+</odoo>

@@ -1,0 +1,31 @@
+<odoo>
+    <data>
+        <!--form view-->
+        <record id="show_member_view_form" model="ir.ui.view">
+            <field name="name">show.member.in.loan.form</field>
+            <field name="model">show.member.in.loan</field>
+            <field name="arch" type="xml">
+                <form string="Member">
+                    <sheet>
+                        <group>
+                            <field name="member_id"/>
+                            <field name="return_date_due"/>
+                            <field name="book_ids">
+                                <list>
+                                    <field name="name"/>
+                                    <field name="author"/>
+                                </list>
+                            </field>
+                        </group>
+                    </sheet>
+                    <footer>
+                        <button name="action_create_loan" type="object" string="Create new Loans"/>
+                        <button string="Cancel" class="btn-secondary" special="cancel" data-hotkey="x"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+        <!--action = no action, this view is triggered from the library loan class-->
+    </data>
+</odoo>
+

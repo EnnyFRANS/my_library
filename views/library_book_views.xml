@@ -1,0 +1,122 @@
+<odoo>
+    <data>
+        <!-- view search -->
+        <record id="library_book_view_search" model="ir.ui.view">
+            <field name="name">library.book.search</field>
+            <field name="model">library.book</field>
+            <field name="arch" type="xml">
+                <search string="Books">
+                    <field name="name" string="Book Title"/>
+                    <field name="author" string="Author Name"/>
+                    <filter string="Archived" name="inactive" domain="[('active', '=', False)]"/>
+                    <filter name="publication_date" string="Last 5 Years"
+                            domain="[( 'publication_date', '&gt;', (context_today()+relativedelta(years=-5)).strftime('%Y-%m-%d') )]"/>
+                    <filter name="quantity" string="is available"
+                            domain="[( 'quantity', '&gt;', 1 )]"/>
+                </search>
+            </field>
+        </record>
+        <!-- view list -->
+        <record id="library_book_view_list" model="ir.ui.view">
+            <field name="name">library.book.list</field>
+            <field name="model">library.book</field>
+            <field name="arch" type="xml">
+                <list string="Books" default_order="name asc">
+                    <field name="sequence" widget="handle"/>
+                    <field name="active" invisible="1" />
+                    <field name="name"/>
+                    <field name="author"/>
+                    <field name="publication_date"/>
+                    <field name="member_ids" widget="one2many_tags" string="Interested Members"/>
+                    <field name="quantity" string="Quantity"/>
+                </list>
+            </field>
+        </record>
+
+
+        <record id="library_book_view_form" model="ir.ui.view">
+            <field name="name">library.book.form</field>
+            <field name="model">library.book</field>
+            <field name="arch" type="xml">
+                <form string="Books">
+                    <sheet>
+                        <widget name="web_ribbon" title="Archived" bg_color="text-bg-danger" invisible="active"/>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <header>
+                                <button name="action_add_book" string="Add Book" type="object"/>
+                            </header>
+                            <group string="one">
+                                <field name="active"/>
+                                <field name="name" placeholder='e.g Harry Potter'/>
+                                <field name="author" placeholder='author...'/>
+                                <field name="publication_date"/>
+                                <field name="tag_ids" string="Tags"/>
+                                <field name="quantity" string="Quantity"/>
+                            </group>
+                            <group string="two">
+                                <field name="summary"/>
+                                <field name="pages"/>
+                                <field name="isbn" help="International Standard Book Number"/>
+                                <field name="state"/>
+                                <field name="price"/>
+                            </group>
+
+                            <notebook>
+                                <page name="interested_members" string="interested members">
+                                    <field name="member_ids" string="Interested Members" nolabel="1">
+                                        <list>
+                                            <field name="name"/>
+                                            <field name="mail"/>
+                                        </list>
+                                    </field>
+                                </page>
+                                <page name="categories" string="Categories">
+                                    <field name="category_ids">
+                                        <list>
+                                            <field name="name"/>
+                                            <field name="description"/>
+                                        </list>
+                                    </field>
+
+                                </page>
+                            </notebook>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- actions -->
+        <record id="open_view_library_book_action" model="ir.actions.act_window">
+            <field name="name">Books</field>
+            <field name="res_model">library.book</field>
+            <field name="view_mode">list,form</field>
+            <field name="search_view_id" ref="library_book_view_search"/>
+            <field name="context">{'default_active':True}</field>
+        </record>
+
+        <menuitem
+                id="rootmenulibrary"
+                name="Library"
+                web_icon="my_library,static/description/icon.png"/>
+
+        <menuitem id="librarybookmenu"
+                  parent="rootmenulibrary"
+                  action="open_view_library_book_action"/>
+
+
+        <!-- Menu Item
+        <menuitem
+                id="library_books_menuitem"
+                web_icon="my_library,static/description/icon.png">
+            <menuitem id="test_first_level_menu" name="First Level">
+                <menuitem id="test_model_menu_action" action="open_view_library_book_action"/>
+            </menuitem>
+        </menuitem>-->
+    </data>
+</odoo>

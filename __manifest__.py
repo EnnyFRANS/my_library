@@ -1,0 +1,27 @@
+# -*- coding: utf-8 -*-
+{
+    'name': "Book Library",
+    'summary': "Book Library Management system",
+    'description': """ Easy, simple Book Library Management purpose """,
+    'author': "Enny",
+    'website': "https://www.yourcompany.com",
+    'category': 'Book Library',
+    'version': '1.0.0',
+    'depends': ['base', 'mail'],
+    'data': ['security/ir.model.access.csv',
+             'views/views.xml',
+             'views/library_book_views.xml',
+             'views/library_member_views.xml',
+             'data/ir_cron_my_library_data.xml',
+             'views/library_loan_views.xml',
+             'views/library_book_tag_views.xml',
+             'views/book_category_views.xml',
+             'wizard/show_member_in_loan_wizard_views.xml',
+             'views/res_partner_views.xml',
+             'data/demo.xml'
+             ],
+    'demo': ['demo/demo.xml'],
+    'application': True,
+    'license': 'LGPL-3',
+    'sequence': -100,
+}
