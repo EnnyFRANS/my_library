@@ -16,8 +16,6 @@ class LibraryBook(models.Model):
     mail = fields.Char(string='E-mail')
     summary = fields.Char(string='Summary')
     phone = fields.Integer(string='Phone')
-
-
     member_number = fields.Integer(string='Member Number', default= give_default_member_number)
 
     subscription_date = fields.Date(string='Subscription date')

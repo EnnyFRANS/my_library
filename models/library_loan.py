@@ -1,12 +1,18 @@
 from email.policy import default
 
-from odoo import models, fields, api
+from odoo import models, fields, api, _
 from odoo.exceptions import ValidationError
 
 class LibraryLoan(models.Model):
     _name = 'library.loan'
     _inherit = ['mail.thread.cc', 'mail.activity.mixin']
     _description = 'my_library.library_loan'
+
+    '''This is an example where we can put a default that create automatically the name by calling the library loan'''
+    # name = fields.Char(string='Name', readonly=True, default=lambda self: self.env['ir.sequence'].next_by_code('my.library.loan'))
+    # name = fields.Char(string='Name', readonly=True, default=lambda self: _('New'),)
+
+    name = fields.Char('Name', readonly=True)
 
     active = fields.Boolean(string='Active', default=True)
     check_out_date = fields.Date(string='Check out date')
@@ -33,6 +39,8 @@ class LibraryLoan(models.Model):
         result = super().create(vals_list)   # this is when the database is affected (addition of new instance)
         for record in result:  # We do this after the creation to avoid doing the search in recorded data in library_book table
             record.book_id.quantity -= 1
+            seq_number = self.env['ir.sequence'].next_by_code('my.library.loan')
+            record.name = seq_number+record.book_id.name
         return result
 
     def write(self, vals):
@@ -84,7 +92,13 @@ class LibraryLoan(models.Model):
                         'default_return_date_due':self.return_date_due,
                         },
         }
+
+
     # see the example for default value : def _get_default_departure_date(self):
+
+    # def set_loan_name(self):
+    #     self.name = self.env['ir.sequence'].next_by_code('my.library.loan')
+    #     return self.name
 
 
 

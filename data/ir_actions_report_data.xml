@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="library_member_report_test" model="ir.actions.report">
+        <field name="name">Test Report Member</field>
+        <field name="model">library.member</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">my_library.report_members</field>
+        <field name="report_file">my_library.report_members</field>
+        <field name="binding_model_id" ref="model_library_member"/>
+        <field name="binding_type">report</field>
+        <field name="attachment">'library_member.pdf'</field>
+        <field name="attachment_use">True</field>
+    </record>
+</odoo>

@@ -5,14 +5,15 @@
             <field name="name">library.loan.list</field>
             <field name="model">library.loan</field>
             <field name="arch" type="xml">
-                <list string="Books">
+                <list string="Loans">
                     <field name="active" invisible="1"/>
+                    <field name="name"/>
                     <field name="check_out_date"/>
                     <field name="subscription_date"/>
                     <field name="return_date_due"/>
                     <field name="return_date_effective"/>
                     <field name="state"/>
-                    <field name="member_id" widget="many2one_avatar_user" readonly="1"/>
+                    <field name="member_id" widget="many2one_avatar_user"/>
                     <field name="book_id"/>
                 </list>
             </field>
@@ -29,6 +30,7 @@
                     </header>
                     <sheet>
                         <group>
+                            <field name="name"/>
                             <field name="active"/>
                             <field name="check_out_date"/>
                             <field name="subscription_date"/>
@@ -36,7 +38,7 @@
                             <field name="return_date_effective"/>
                             <field name="state"/>
                             <field name="book_id"/>
-                            <field name="member_id" widget="many2one_avatar_user" readonly="1"/>
+                            <field name="member_id" widget="many2one_avatar_user"/>
                         </group>
                     </sheet>
                     <chatter/>
