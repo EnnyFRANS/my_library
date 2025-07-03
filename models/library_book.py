@@ -1,4 +1,6 @@
-from odoo import models, fields, api
+from odoo import models, fields, api, _
+from odoo.tools.sql import SQL
+from odoo.exceptions import ValidationError, UserError
 
 class LibraryBook(models.Model):
     _name = 'library.book'
@@ -38,6 +40,10 @@ class LibraryBook(models.Model):
         inverse_name ='book_id',
         string = 'Loans'
     )
+    age_limit = fields.Integer('Minimum age')
+
+
+    _sql_constraints = [('book_name_uniq', "unique(name)", "Book name must be unique.")]
 
     def change_book_status(self):
         if self.quantity > 0:
@@ -53,5 +59,11 @@ class LibraryBook(models.Model):
     def action_add_book(self):
         self.quantity += 1
         self.change_book_status()
+
+    @api.constrains('publication_date')
+    def _check_publication_date(self):
+        for book in self:
+            if book.publication_date > fields.Date.today():
+                raise ValidationError(_('invalid date'))
 
 

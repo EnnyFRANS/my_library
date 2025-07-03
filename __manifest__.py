@@ -8,7 +8,8 @@
     'category': 'Book Library',
     'version': '1.0.0',
     'depends': ['base', 'mail'],
-    'data': ['security/ir.model.access.csv',
+    'data': ['security/library_security.xml',
+             'security/ir.model.access.csv',
              'views/views.xml',
              'views/library_book_views.xml',
              'views/library_member_views.xml',
@@ -19,6 +20,7 @@
              'views/book_category_views.xml',
              'wizard/show_member_in_loan_wizard_views.xml',
              'views/res_partner_views.xml',
+             'views/res_config_settings_views.xml',
              'data/demo.xml',
              'report/report_member.xml',
              'data/ir_actions_report_data.xml',
@@ -27,4 +29,5 @@
     'application': True,
     'license': 'LGPL-3',
     'sequence': -100,
+    'post_init_hook': 'hook_duration_post_init',
 }

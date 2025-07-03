@@ -9,6 +9,7 @@
                     <field name="active" invisible="1"/>
                     <field name="name"/>
                     <field name="mail"/>
+                    <field name="member_age"/>
                     <field name="summary"/>
                     <field name="phone"/>
                     <field name="member_number"/>
@@ -37,6 +38,7 @@
                             <field name="active"/>
                             <field name="name" placeholder="John Doe"/>
                             <field name="mail"/>
+                            <field name="member_age"/>
                             <field name="summary"/>
                             <field name="phone"/>
                             <field name="member_number"/>

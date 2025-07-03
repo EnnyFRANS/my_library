@@ -23,9 +23,10 @@
             <field name="arch" type="xml">
                 <list string="Books" default_order="name asc">
                     <field name="sequence" widget="handle"/>
-                    <field name="active" invisible="1" />
+                    <field name="active" invisible="1"/>
                     <field name="name"/>
                     <field name="author"/>
+                    <field name="age_limit"/>
                     <field name="publication_date"/>
                     <field name="member_ids" widget="one2many_tags" string="Interested Members"/>
                     <field name="quantity" string="Quantity"/>
@@ -54,6 +55,7 @@
                                 <field name="active"/>
                                 <field name="name" placeholder='e.g Harry Potter'/>
                                 <field name="author" placeholder='author...'/>
+                                <field name="age_limit"/>
                                 <field name="publication_date"/>
                                 <field name="tag_ids" string="Tags"/>
                                 <field name="quantity" string="Quantity"/>
@@ -100,6 +102,9 @@
             <field name="context">{'default_active':True}</field>
         </record>
 
+
+
+
         <menuitem
                 id="rootmenulibrary"
                 name="Library"
@@ -108,6 +113,9 @@
         <menuitem id="librarybookmenu"
                   parent="rootmenulibrary"
                   action="open_view_library_book_action"/>
+
+
+
 
 
         <!-- Menu Item

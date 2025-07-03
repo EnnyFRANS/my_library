@@ -17,6 +17,7 @@ class LibraryBook(models.Model):
     summary = fields.Char(string='Summary')
     phone = fields.Integer(string='Phone')
     member_number = fields.Integer(string='Member Number', default= give_default_member_number)
+    member_age = fields.Integer('Age', default=0)
 
     subscription_date = fields.Date(string='Subscription date')
     book_id = fields.Many2one(

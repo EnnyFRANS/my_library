@@ -78,8 +78,9 @@ class LibraryLoan(models.Model):
         res = super().default_get(fields_list)
         if 'check_out_date' in fields_list:
             res['check_out_date'] = fields.Date.today()
+        days_to_return = self.env['ir.config_parameter'].get_param('library_loan.duration')
         if 'return_date_due' in fields_list:
-            res['return_date_due'] = fields.Date.add(fields.Date.today(), months=3)
+            res['return_date_due'] = fields.Date.add(fields.Date.today(), days=int(days_to_return))
         return res
 
     def action_open_wizard_see_member(self):
@@ -99,6 +100,17 @@ class LibraryLoan(models.Model):
     # def set_loan_name(self):
     #     self.name = self.env['ir.sequence'].next_by_code('my.library.loan')
     #     return self.name
+    book_ids_domain = fields.Many2many(comodel_name='library.book' ,compute='_compute_books_domain')
+
+    @api.depends("member_id")
+    def _compute_books_domain(self):
+        for record in self:
+            if record.member_id:
+                age = record.member_id.member_age
+                record.book_ids_domain = self.env['library.book'].search([('age_limit', '<=', age)])
+            else:
+                record.book_ids_domain = []
+
 
 
 

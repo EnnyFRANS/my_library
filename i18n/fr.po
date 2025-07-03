@@ -1,0 +1,742 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* my_library
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-03 13:13+0000\n"
+"PO-Revision-Date: 2025-07-03 13:13+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: fr\n"
+"Plural-Forms: \n"
+
+#. module: my_library
+#: model_terms:ir.ui.view,arch_db:my_library.library_member_view_form
+msgid "<span class=\"o_stat_text\">Loans</span>"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_library_loan__message_needaction
+msgid "Action Needed"
+msgstr "Action Besoin"
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_library_book__active
+#: model:ir.model.fields,field_description:my_library.field_library_book_tag__active
+#: model:ir.model.fields,field_description:my_library.field_library_loan__active
+#: model:ir.model.fields,field_description:my_library.field_library_member__active
+msgid "Active"
+msgstr "Actif"
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_library_loan__activity_ids
+msgid "Activities"
+msgstr "Activites"
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_library_loan__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_library_loan__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_library_loan__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: my_library
+#: model_terms:ir.ui.view,arch_db:my_library.library_book_view_form
+msgid "Add Book"
+msgstr "Ajout livre"
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_library_member__member_age
+msgid "Age"
+msgstr ""
+
+#. module: my_library
+#: model_terms:ir.ui.view,arch_db:my_library.library_book_view_form
+#: model_terms:ir.ui.view,arch_db:my_library.library_book_view_search
+msgid "Archived"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_library_loan__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_library_book__author
+msgid "Author"
+msgstr "Auteur"
+
+#. module: my_library
+#: model_terms:ir.ui.view,arch_db:my_library.library_book_view_search
+msgid "Author Name"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields.selection,name:my_library.selection__library_book__state__available
+msgid "Available"
+msgstr "Disponible"
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_show_member_in_loan__book_ids
+msgid "Book"
+msgstr "Livre"
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_library_loan__book_ids_domain
+msgid "Book Ids Domain"
+msgstr "Domain Ids Livre"
+
+#. module: my_library
+#: model_terms:ir.ui.view,arch_db:my_library.library_book_view_search
+msgid "Book Title"
+msgstr "Titre de livre"
+
+#. module: my_library
+#: model:ir.model.constraint,message:my_library.constraint_library_book_book_name_uniq
+msgid "Book name must be unique."
+msgstr "Nom de livre doit être unique"
+
+#. module: my_library
+#: model:ir.actions.act_window,name:my_library.open_view_library_book_action
+#: model:ir.model.fields,field_description:my_library.field_book_category__book_ids
+#: model:ir.ui.menu,name:my_library.librarybookmenu
+#: model_terms:ir.ui.view,arch_db:my_library.library_book_view_form
+#: model_terms:ir.ui.view,arch_db:my_library.library_book_view_list
+#: model_terms:ir.ui.view,arch_db:my_library.library_book_view_search
+#: model_terms:ir.ui.view,arch_db:my_library.library_loan_view_form
+msgid "Books"
+msgstr "Livres"
+
+#. module: my_library
+#: model:ir.model.fields.selection,name:my_library.selection__library_book__state__borrowed
+msgid "Borrowed"
+msgstr "Louée"
+
+#. module: my_library
+#: model_terms:ir.ui.view,arch_db:my_library.show_member_view_form
+msgid "Cancel"
+msgstr "Annule"
+
+#. module: my_library
+#: model:ir.actions.act_window,name:my_library.open_view_book_category_action
+#: model:ir.model.fields,field_description:my_library.field_library_book__category_ids
+#: model:ir.ui.menu,name:my_library.bookcategorymenu
+#: model_terms:ir.ui.view,arch_db:my_library.book_category_view_form
+#: model_terms:ir.ui.view,arch_db:my_library.book_category_view_list
+#: model_terms:ir.ui.view,arch_db:my_library.library_book_view_form
+msgid "Categories"
+msgstr "Categorie"
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_book_category__name
+msgid "Category"
+msgstr "Categorie"
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_library_loan__check_out_date
+msgid "Check out date"
+msgstr "date Check out"
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_library_book_tag__color
+msgid "Color"
+msgstr "Culeur"
+
+#. module: my_library
+#: model:ir.model,name:my_library.model_res_config_settings
+msgid "Config Settings"
+msgstr "Paramètres de configuration"
+
+#. module: my_library
+#: model:ir.ui.menu,name:my_library.librarybooktagsmenuparent
+msgid "Configuration"
+msgstr "Configuration"
+
+#. module: my_library
+#: model:ir.model,name:my_library.model_res_partner
+msgid "Contact"
+msgstr "Contact"
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_library_book__cover
+msgid "Cover"
+msgstr "Cover"
+
+#. module: my_library
+#: model_terms:ir.ui.view,arch_db:my_library.show_member_view_form
+msgid "Create new Loans"
+msgstr "Cree nouveau Loans"
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_book_category__create_uid
+#: model:ir.model.fields,field_description:my_library.field_library_book__create_uid
+#: model:ir.model.fields,field_description:my_library.field_library_book_tag__create_uid
+#: model:ir.model.fields,field_description:my_library.field_library_loan__create_uid
+#: model:ir.model.fields,field_description:my_library.field_library_member__create_uid
+#: model:ir.model.fields,field_description:my_library.field_show_member_in_loan__create_uid
+msgid "Created by"
+msgstr "Crée par"
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_book_category__create_date
+#: model:ir.model.fields,field_description:my_library.field_library_book__create_date
+#: model:ir.model.fields,field_description:my_library.field_library_book_tag__create_date
+#: model:ir.model.fields,field_description:my_library.field_library_loan__create_date
+#: model:ir.model.fields,field_description:my_library.field_library_member__create_date
+#: model:ir.model.fields,field_description:my_library.field_show_member_in_loan__create_date
+msgid "Created on"
+msgstr "Date creation"
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_book_category__description
+msgid "Description"
+msgstr "Description"
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_book_category__display_name
+#: model:ir.model.fields,field_description:my_library.field_library_book__display_name
+#: model:ir.model.fields,field_description:my_library.field_library_book_tag__display_name
+#: model:ir.model.fields,field_description:my_library.field_library_loan__display_name
+#: model:ir.model.fields,field_description:my_library.field_library_member__display_name
+#: model:ir.model.fields,field_description:my_library.field_show_member_in_loan__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_library_member__mail
+msgid "E-mail"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_library_loan__email_cc
+msgid "Email cc"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_library_loan__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_library_loan__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,help:my_library.field_library_loan__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_library_loan__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: my_library
+#: model:ir.module.category,description:my_library.rule_library_category
+msgid "Helps you manage the access for library user"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_book_category__id
+#: model:ir.model.fields,field_description:my_library.field_library_book__id
+#: model:ir.model.fields,field_description:my_library.field_library_book_tag__id
+#: model:ir.model.fields,field_description:my_library.field_library_loan__id
+#: model:ir.model.fields,field_description:my_library.field_library_member__id
+#: model:ir.model.fields,field_description:my_library.field_show_member_in_loan__id
+msgid "ID"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_library_book__isbn
+msgid "ISBN"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_library_loan__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,help:my_library.field_library_loan__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,help:my_library.field_library_loan__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,help:my_library.field_library_loan__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_library_book__member_ids
+#: model_terms:ir.ui.view,arch_db:my_library.library_book_view_form
+#: model_terms:ir.ui.view,arch_db:my_library.library_book_view_list
+msgid "Interested Members"
+msgstr ""
+
+#. module: my_library
+#: model_terms:ir.ui.view,arch_db:my_library.library_member_view_form
+#: model_terms:ir.ui.view,arch_db:my_library.library_member_view_list
+msgid "Interested book"
+msgstr ""
+
+#. module: my_library
+#: model_terms:ir.ui.view,arch_db:my_library.library_book_view_form
+msgid "International Standard Book Number"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_library_loan__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_res_partner__is_member
+#: model:ir.model.fields,field_description:my_library.field_res_users__is_member
+msgid "Is member"
+msgstr ""
+
+#. module: my_library
+#: model_terms:ir.ui.view,arch_db:my_library.library_member_view_form
+msgid "John Doe"
+msgstr ""
+
+#. module: my_library
+#: model_terms:ir.ui.view,arch_db:my_library.library_book_view_search
+msgid "Last 5 Years"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_book_category__write_uid
+#: model:ir.model.fields,field_description:my_library.field_library_book__write_uid
+#: model:ir.model.fields,field_description:my_library.field_library_book_tag__write_uid
+#: model:ir.model.fields,field_description:my_library.field_library_loan__write_uid
+#: model:ir.model.fields,field_description:my_library.field_library_member__write_uid
+#: model:ir.model.fields,field_description:my_library.field_show_member_in_loan__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_book_category__write_date
+#: model:ir.model.fields,field_description:my_library.field_library_book__write_date
+#: model:ir.model.fields,field_description:my_library.field_library_book_tag__write_date
+#: model:ir.model.fields,field_description:my_library.field_library_loan__write_date
+#: model:ir.model.fields,field_description:my_library.field_library_member__write_date
+#: model:ir.model.fields,field_description:my_library.field_show_member_in_loan__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields.selection,name:my_library.selection__library_loan__state__late
+msgid "Late"
+msgstr ""
+
+#. module: my_library
+#: model:res.groups,name:my_library.group_library_librarian
+msgid "Librarian"
+msgstr ""
+
+#. module: my_library
+#: model:ir.module.category,name:my_library.rule_library_category
+#: model:ir.ui.menu,name:my_library.rootmenulibrary
+msgid "Library"
+msgstr ""
+
+#. module: my_library
+#: model:res.groups,name:my_library.group_library_base_admin
+msgid "Library admin"
+msgstr ""
+
+#. module: my_library
+#: model:res.groups,name:my_library.group_library_base_user
+msgid "Library user"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_library_member__loan_count
+msgid "Loan Count"
+msgstr ""
+
+#. module: my_library
+#: model:ir.actions.act_window,name:my_library.open_view_library_loan_action
+#: model:ir.model.fields,field_description:my_library.field_library_book__loan_ids
+#: model:ir.model.fields,field_description:my_library.field_library_member__loan_ids
+#: model:ir.ui.menu,name:my_library.libraryloanmenu
+#: model_terms:ir.ui.view,arch_db:my_library.library_loan_view_list
+msgid "Loans"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields.selection,name:my_library.selection__library_book__state__lost
+msgid "Lost"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_library_loan__member_id
+#: model:ir.model.fields,field_description:my_library.field_show_member_in_loan__member_id
+#: model:ir.model.fields.selection,name:my_library.selection__show_member_in_loan__creation_stage__member
+#: model_terms:ir.ui.view,arch_db:my_library.report_members
+#: model_terms:ir.ui.view,arch_db:my_library.show_member_view_form
+msgid "Member"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_library_member__member_number
+msgid "Member Number"
+msgstr ""
+
+#. module: my_library
+#: model:ir.actions.act_window,name:my_library.open_view_library_member_action
+#: model:ir.ui.menu,name:my_library.librarymembermenu
+#: model_terms:ir.ui.view,arch_db:my_library.library_member_view_list
+msgid "Members"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_library_loan__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_library_loan__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_library_book__age_limit
+msgid "Minimum age"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_library_loan__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: my_library
+#: model:ir.actions.server,name:my_library.ir_cron_data_message_late_ir_actions_server
+msgid "My Library: Check if this is late"
+msgstr ""
+
+#. module: my_library
+#: model_terms:ir.ui.view,arch_db:my_library.library_member_view_form
+#: model_terms:ir.ui.view,arch_db:my_library.library_member_view_list
+msgid "My Loans"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_library_book__name
+#: model:ir.model.fields,field_description:my_library.field_library_book_tag__name
+#: model:ir.model.fields,field_description:my_library.field_library_loan__name
+#: model:ir.model.fields,field_description:my_library.field_library_member__name
+msgid "Name"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_library_loan__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_library_loan__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_library_loan__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_library_loan__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_library_loan__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,help:my_library.field_library_loan__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,help:my_library.field_library_loan__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields.selection,name:my_library.selection__library_loan__state__ongoing
+msgid "Ongoing"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_library_book__pages
+msgid "Pages"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_library_member__phone
+msgid "Phone"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_library_book__price
+msgid "Price"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_library_book__publication_date
+msgid "Publication Date"
+msgstr ""
+
+#. module: my_library
+#: model_terms:ir.ui.view,arch_db:my_library.library_book_view_form
+#: model_terms:ir.ui.view,arch_db:my_library.library_book_view_list
+msgid "Quantity"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_library_loan__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_show_member_in_loan__return_date_due
+msgid "Return date due"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields.selection,name:my_library.selection__library_loan__state__returned
+msgid "Returned"
+msgstr ""
+
+#. module: my_library
+#: model_terms:ir.ui.view,arch_db:my_library.library_loan_view_form
+msgid "See member"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields.selection,name:my_library.selection__show_member_in_loan__creation_stage__selected_books
+msgid "Selected_books"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_library_book__sequence
+msgid "Sequence"
+msgstr ""
+
+#. module: my_library
+#: model:ir.actions.act_window,name:my_library.loan_settings_action
+#: model:ir.ui.menu,name:my_library.menu_loan_settings
+msgid "Settings"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model,name:my_library.model_show_member_in_loan
+msgid "Show member IDs with a button from loan page"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_library_book__state
+#: model:ir.model.fields,field_description:my_library.field_library_loan__state
+msgid "State"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,help:my_library.field_library_loan__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_library_loan__subscription_date
+#: model:ir.model.fields,field_description:my_library.field_library_member__subscription_date
+msgid "Subscription date"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_library_book__summary
+#: model:ir.model.fields,field_description:my_library.field_library_member__summary
+#: model:ir.model.fields.selection,name:my_library.selection__show_member_in_loan__creation_stage__summary
+msgid "Summary"
+msgstr ""
+
+#. module: my_library
+#: model:ir.actions.act_window,name:my_library.open_view_library_book_tag_action
+#: model:ir.ui.menu,name:my_library.librarybooktagsmenu
+#: model_terms:ir.ui.view,arch_db:my_library.library_book_tag_view_list
+#: model_terms:ir.ui.view,arch_db:my_library.library_book_view_form
+msgid "Tags"
+msgstr ""
+
+#. module: my_library
+#: model:ir.actions.report,name:my_library.library_member_report_test
+msgid "Test Report Member"
+msgstr ""
+
+#. module: my_library
+#: model_terms:ir.ui.view,arch_db:my_library.report_members
+msgid "This object's name is"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_book_category__total_books
+msgid "Total Book(s)"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_res_config_settings__loan_limit_days
+msgid "Total return days"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,help:my_library.field_library_book_tag__color
+msgid ""
+"Transparent tags are not visible in the kanban view of your projects and "
+"tasks."
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,help:my_library.field_library_loan__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: my_library
+#: model_terms:ir.ui.view,arch_db:my_library.library_book_view_form
+msgid "author..."
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_library_loan__book_id
+msgid "book"
+msgstr ""
+
+#. module: my_library
+#: model_terms:ir.ui.view,arch_db:my_library.library_book_view_form
+msgid "e.g Harry Potter"
+msgstr ""
+
+#. module: my_library
+#: model_terms:ir.ui.view,arch_db:my_library.book_category_view_form
+msgid "e.g. Fiction"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_library_member__book_id
+msgid "favorite books"
+msgstr ""
+
+#. module: my_library
+#: model_terms:ir.ui.view,arch_db:my_library.library_book_view_form
+msgid "interested members"
+msgstr ""
+
+#. module: my_library
+#. odoo-python
+#: code:addons/my_library/models/library_book.py:0
+msgid "invalid date"
+msgstr ""
+
+#. module: my_library
+#: model_terms:ir.ui.view,arch_db:my_library.library_book_view_search
+msgid "is available"
+msgstr ""
+
+#. module: my_library
+#: model_terms:ir.ui.view,arch_db:my_library.library_member_view_form
+msgid "members"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model,name:my_library.model_library_book
+msgid "my_library.library_book"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model,name:my_library.model_book_category
+msgid "my_library.library_book_category"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model,name:my_library.model_library_book_tag
+msgid "my_library.library_book_tag"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model,name:my_library.model_library_loan
+msgid "my_library.library_loan"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model,name:my_library.model_library_member
+msgid "my_library.library_member"
+msgstr ""
+
+#. module: my_library
+#: model_terms:ir.ui.view,arch_db:my_library.library_book_view_form
+msgid "one"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_library_book__quantity
+msgid "quantity"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_library_loan__return_date_due
+msgid "return date due"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_library_loan__return_date_effective
+msgid "return date effective"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,help:my_library.field_library_book__state
+msgid "selection for book's state"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,help:my_library.field_library_loan__state
+msgid "selection for loan's state"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_show_member_in_loan__creation_stage
+msgid "stages"
+msgstr ""
+
+#. module: my_library
+#: model:ir.model.fields,field_description:my_library.field_library_book__tag_ids
+msgid "tag"
+msgstr ""
+
+#. module: my_library
+#: model_terms:ir.ui.view,arch_db:my_library.library_book_view_form
+msgid "two"
+msgstr ""
