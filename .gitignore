@@ -1,0 +1,33 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# VSCode settings (optional)
+.vscode/
+
+# Environment files
+venv/
+.env
+
+# Odoo specific
+*.log
+*.pot
+*.mo
+*.swp
+
+# Compiled translations
+*.po~
+
+# Bytecode cache
+*.pyc
+*.pyo
+
+# Temporary files
+*.bak
+*.tmp
+
+# System files
+.DS_Store
+Thumbs.db
